@@ -2,10 +2,12 @@ package com.mariobermudezjr.challengeassignment;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Handler;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.MediaController;
@@ -119,11 +121,11 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
         VideoView videoView = findViewById(R.id.videoView);
         MediaController mediaController= new MediaController(this);
         mediaController.setAnchorView(videoView);
-        Uri uri= Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.video);
+        Uri uri= Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.sunrise);
         videoView.setMediaController(mediaController);
         videoView.setVideoURI(uri);
         videoView.requestFocus();
-        videoView.start();
+//        videoView.start();
 
 
     }
@@ -131,37 +133,71 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View view) {
+        VideoView videoView = findViewById(R.id.videoView);
+        MediaController mediaController= new MediaController(this);
 
         switch (view.getId())
         {
             case R.id.imageView:
 
-                Toast.makeText(this, "Short Press: Play video.", Toast.LENGTH_SHORT).show();
+                mediaController.setAnchorView(videoView);
+                Uri uri= Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.galaxy);
+                videoView.setMediaController(mediaController);
+                videoView.setVideoURI(uri);
+                videoView.requestFocus();
+                videoView.start();
+
+                Toast.makeText(this, "Short Press: Play galaxy.", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.imageView1:
-
-                Toast.makeText(this, "Short Press: Play video1.", Toast.LENGTH_SHORT).show();
+                mediaController.setAnchorView(videoView);
+                Uri uri1= Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.moon);
+                videoView.setMediaController(mediaController);
+                videoView.setVideoURI(uri1);
+                videoView.requestFocus();
+                videoView.start();
+                Toast.makeText(this, "Short Press: Play moon.", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.imageView2:
-
-                Toast.makeText(this, "Short Press: Play video2.", Toast.LENGTH_SHORT).show();
+                mediaController.setAnchorView(videoView);
+                Uri uri2= Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.clouds);
+                videoView.setMediaController(mediaController);
+                videoView.setVideoURI(uri2);
+                videoView.requestFocus();
+                videoView.start();
+                Toast.makeText(this, "Short Press: Play clouds.", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.imageView3:
-
-                Toast.makeText(this, "Short Press: Play video3.", Toast.LENGTH_SHORT).show();
+                mediaController.setAnchorView(videoView);
+                Uri uri3= Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.caterpillar);
+                videoView.setMediaController(mediaController);
+                videoView.setVideoURI(uri3);
+                videoView.requestFocus();
+                videoView.start();
+                Toast.makeText(this, "Short Press: Play caterpillar.", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.imageView4:
-
-                Toast.makeText(this, "Short Press: Play video4.", Toast.LENGTH_SHORT).show();
+                mediaController.setAnchorView(videoView);
+                Uri uri4= Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.sunrise);
+                videoView.setMediaController(mediaController);
+                videoView.setVideoURI(uri4);
+                videoView.requestFocus();
+                videoView.start();
+                Toast.makeText(this, "Short Press: Play sunrise.", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.imageView5:
-
-                Toast.makeText(this, "Short Press: Play video5.", Toast.LENGTH_SHORT).show();
+                mediaController.setAnchorView(videoView);
+                Uri uri5= Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.waves);
+                videoView.setMediaController(mediaController);
+                videoView.setVideoURI(uri5);
+                videoView.requestFocus();
+                videoView.start();
+                Toast.makeText(this, "Short Press: Play waves.", Toast.LENGTH_SHORT).show();
                 break;
 
         }
