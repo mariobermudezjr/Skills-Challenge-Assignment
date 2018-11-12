@@ -5,6 +5,17 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:visibility="visible"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Video Player" />
+
     <VideoView
         android:id="@+id/videoView"
         android:layout_width="match_parent"

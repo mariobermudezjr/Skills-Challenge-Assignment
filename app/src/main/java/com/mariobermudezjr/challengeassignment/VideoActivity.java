@@ -1,8 +1,11 @@
 package com.mariobermudezjr.challengeassignment;
 
+import android.content.Intent;
 import android.net.Uri;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.MediaController;
@@ -15,6 +18,7 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video);
+
 
         // Initialize Image Views
         ImageView imageView = findViewById(R.id.imageView);
@@ -39,7 +43,8 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
                 // TODO Auto-generated method stub
 
                 Toast.makeText(getApplicationContext(), "Long Press worked!", Toast.LENGTH_SHORT).show();
-
+                Intent dummyPage = new Intent(VideoActivity.this,DummyActivity.class);
+                startActivity(dummyPage);
                 return true;
             }
 
@@ -48,9 +53,10 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
 
             @Override
             public boolean onLongClick(View v) {
-                // TODO Auto-generated method stub
 
                 Toast.makeText(getApplicationContext(), "Long Press 1 worked!", Toast.LENGTH_SHORT).show();
+                Intent dummyPage = new Intent(VideoActivity.this,DummyActivity.class);
+                startActivity(dummyPage);
 
                 return true;
             }
@@ -60,9 +66,10 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
 
             @Override
             public boolean onLongClick(View v) {
-                // TODO Auto-generated method stub
 
                 Toast.makeText(getApplicationContext(), "Long Press 2 worked!", Toast.LENGTH_SHORT).show();
+                Intent dummyPage = new Intent(VideoActivity.this,DummyActivity.class);
+                startActivity(dummyPage);
 
                 return true;
             }
@@ -72,9 +79,10 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
 
             @Override
             public boolean onLongClick(View v) {
-                // TODO Auto-generated method stub
 
                 Toast.makeText(getApplicationContext(), "Long Press 3 worked!", Toast.LENGTH_SHORT).show();
+                Intent dummyPage = new Intent(VideoActivity.this,DummyActivity.class);
+                startActivity(dummyPage);
 
                 return true;
             }
@@ -84,9 +92,10 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
 
             @Override
             public boolean onLongClick(View v) {
-                // TODO Auto-generated method stub
 
                 Toast.makeText(getApplicationContext(), "Long Press 4 worked!", Toast.LENGTH_SHORT).show();
+                Intent dummyPage = new Intent(VideoActivity.this,DummyActivity.class);
+                startActivity(dummyPage);
 
                 return true;
             }
@@ -96,9 +105,10 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
 
             @Override
             public boolean onLongClick(View v) {
-                // TODO Auto-generated method stub
 
                 Toast.makeText(getApplicationContext(), "Long Press 5 worked!", Toast.LENGTH_SHORT).show();
+                Intent dummyPage = new Intent(VideoActivity.this,DummyActivity.class);
+                startActivity(dummyPage);
 
                 return true;
             }
@@ -114,7 +124,10 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
         videoView.setVideoURI(uri);
         videoView.requestFocus();
         videoView.start();
+
+
     }
+
 
     @Override
     public void onClick(View view) {
@@ -123,32 +136,32 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
         {
             case R.id.imageView:
 
-                Toast.makeText(this, "Short Press video.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Short Press: Play video.", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.imageView1:
 
-                Toast.makeText(this, "Short Press video1.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Short Press: Play video1.", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.imageView2:
 
-                Toast.makeText(this, "Short Press video2.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Short Press: Play video2.", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.imageView3:
 
-                Toast.makeText(this, "Short Press video3.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Short Press: Play video3.", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.imageView4:
 
-                Toast.makeText(this, "SShort Press video4.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Short Press: Play video4.", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.imageView5:
 
-                Toast.makeText(this, "Short Press video5.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Short Press: Play video5.", Toast.LENGTH_SHORT).show();
                 break;
 
         }
