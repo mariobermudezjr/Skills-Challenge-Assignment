@@ -125,6 +125,7 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
         videoView.setMediaController(mediaController);
         videoView.setVideoURI(uri);
         videoView.requestFocus();
+        videoView.setMediaController(null);
 //        videoView.start();
 
 
@@ -146,6 +147,7 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
                 videoView.setVideoURI(uri);
                 videoView.requestFocus();
                 videoView.start();
+                videoView.setMediaController(null);
 
                 // Toast.makeText(this, "Short Press: Play galaxy.", Toast.LENGTH_SHORT).show();
                 break;
@@ -157,6 +159,7 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
                 videoView.setVideoURI(uri1);
                 videoView.requestFocus();
                 videoView.start();
+                videoView.setMediaController(null);
                 // Toast.makeText(this, "Short Press: Play moon.", Toast.LENGTH_SHORT).show();
                 break;
 
@@ -167,6 +170,7 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
                 videoView.setVideoURI(uri2);
                 videoView.requestFocus();
                 videoView.start();
+                videoView.setMediaController(null);
                 // Toast.makeText(this, "Short Press: Play clouds.", Toast.LENGTH_SHORT).show();
                 break;
 
@@ -177,6 +181,7 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
                 videoView.setVideoURI(uri3);
                 videoView.requestFocus();
                 videoView.start();
+                videoView.setMediaController(null);
                 // Toast.makeText(this, "Short Press: Play caterpillar.", Toast.LENGTH_SHORT).show();
                 break;
 
@@ -187,6 +192,7 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
                 videoView.setVideoURI(uri4);
                 videoView.requestFocus();
                 videoView.start();
+                videoView.setMediaController(null);
                 // Toast.makeText(this, "Short Press: Play sunrise.", Toast.LENGTH_SHORT).show();
                 break;
 
@@ -197,6 +203,7 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
                 videoView.setVideoURI(uri5);
                 videoView.requestFocus();
                 videoView.start();
+                videoView.setMediaController(null);
                 //Toast.makeText(this, "Short Press: Play waves.", Toast.LENGTH_SHORT).show();
                 break;
 
