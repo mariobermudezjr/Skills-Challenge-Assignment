@@ -44,7 +44,7 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
             public boolean onLongClick(View v) {
                 // TODO Auto-generated method stub
 
-                Toast.makeText(getApplicationContext(), "Long Press worked!", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(getApplicationContext(), "Long Press worked!", Toast.LENGTH_SHORT).show();
                 Intent dummyPage = new Intent(VideoActivity.this,DummyActivity.class);
                 startActivity(dummyPage);
                 return true;
@@ -56,7 +56,7 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
             @Override
             public boolean onLongClick(View v) {
 
-                Toast.makeText(getApplicationContext(), "Long Press 1 worked!", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(getApplicationContext(), "Long Press 1 worked!", Toast.LENGTH_SHORT).show();
                 Intent dummyPage = new Intent(VideoActivity.this,DummyActivity.class);
                 startActivity(dummyPage);
 
@@ -69,7 +69,7 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
             @Override
             public boolean onLongClick(View v) {
 
-                Toast.makeText(getApplicationContext(), "Long Press 2 worked!", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(getApplicationContext(), "Long Press 2 worked!", Toast.LENGTH_SHORT).show();
                 Intent dummyPage = new Intent(VideoActivity.this,DummyActivity.class);
                 startActivity(dummyPage);
 
@@ -82,7 +82,7 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
             @Override
             public boolean onLongClick(View v) {
 
-                Toast.makeText(getApplicationContext(), "Long Press 3 worked!", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(getApplicationContext(), "Long Press 3 worked!", Toast.LENGTH_SHORT).show();
                 Intent dummyPage = new Intent(VideoActivity.this,DummyActivity.class);
                 startActivity(dummyPage);
 
@@ -95,7 +95,7 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
             @Override
             public boolean onLongClick(View v) {
 
-                Toast.makeText(getApplicationContext(), "Long Press 4 worked!", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(getApplicationContext(), "Long Press 4 worked!", Toast.LENGTH_SHORT).show();
                 Intent dummyPage = new Intent(VideoActivity.this,DummyActivity.class);
                 startActivity(dummyPage);
 
@@ -108,7 +108,7 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
             @Override
             public boolean onLongClick(View v) {
 
-                Toast.makeText(getApplicationContext(), "Long Press 5 worked!", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(getApplicationContext(), "Long Press 5 worked!", Toast.LENGTH_SHORT).show();
                 Intent dummyPage = new Intent(VideoActivity.this,DummyActivity.class);
                 startActivity(dummyPage);
 
@@ -147,7 +147,7 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
                 videoView.requestFocus();
                 videoView.start();
 
-                Toast.makeText(this, "Short Press: Play galaxy.", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(this, "Short Press: Play galaxy.", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.imageView1:
@@ -157,7 +157,7 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
                 videoView.setVideoURI(uri1);
                 videoView.requestFocus();
                 videoView.start();
-                Toast.makeText(this, "Short Press: Play moon.", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(this, "Short Press: Play moon.", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.imageView2:
@@ -167,7 +167,7 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
                 videoView.setVideoURI(uri2);
                 videoView.requestFocus();
                 videoView.start();
-                Toast.makeText(this, "Short Press: Play clouds.", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(this, "Short Press: Play clouds.", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.imageView3:
@@ -177,7 +177,7 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
                 videoView.setVideoURI(uri3);
                 videoView.requestFocus();
                 videoView.start();
-                Toast.makeText(this, "Short Press: Play caterpillar.", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(this, "Short Press: Play caterpillar.", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.imageView4:
@@ -187,7 +187,7 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
                 videoView.setVideoURI(uri4);
                 videoView.requestFocus();
                 videoView.start();
-                Toast.makeText(this, "Short Press: Play sunrise.", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(this, "Short Press: Play sunrise.", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.imageView5:
@@ -197,7 +197,7 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
                 videoView.setVideoURI(uri5);
                 videoView.requestFocus();
                 videoView.start();
-                Toast.makeText(this, "Short Press: Play waves.", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "Short Press: Play waves.", Toast.LENGTH_SHORT).show();
                 break;
 
         }
