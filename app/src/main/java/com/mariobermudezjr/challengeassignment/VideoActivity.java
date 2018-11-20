@@ -1,6 +1,8 @@
 package com.mariobermudezjr.challengeassignment;
 
 import android.content.Intent;
+import android.content.res.AssetManager;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Handler;
 import android.support.v7.app.ActionBar;
@@ -9,12 +11,19 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.MediaController;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
 
+import java.util.Locale;
+
 public class VideoActivity extends AppCompatActivity implements View.OnClickListener {
+
+    Typeface tf;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +38,15 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
         ImageView imageView3 = findViewById(R.id.imageView3);
         ImageView imageView4 = findViewById(R.id.imageView4);
         ImageView imageView5 = findViewById(R.id.imageView5);
+
+//        // Typeface
+//        AssetManager am = this.getApplicationContext().getAssets();
+//        tf = Typeface.createFromAsset(am, String.format(Locale.US, "fonts/%s", "courier.ttf"));
+//
+//        // Text View
+        TextView textView = findViewById(R.id.videoPlayer);
+        textView.bringToFront();
+//        textView.setTypeface(tf);
 
         // Make Image Views Clickable
         imageView.setOnClickListener(this);

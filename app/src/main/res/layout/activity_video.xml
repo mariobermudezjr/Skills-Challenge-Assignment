@@ -1,79 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/my_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@raw/background_mountain">
+    <LinearLayout
+        android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        android:visibility="visible"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:title="Software Engineer Skills Challenge"/>
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/mainText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/century_gothic_bold_italic"
+            android:gravity="center"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp"
+            android:shadowColor="#000000"
+            android:shadowDx="10"
+            android:shadowDy="-10"
+            android:shadowRadius="10"
+            android:text="Welcome to\n Campvibes!"
+            android:textColor="#0CAADC"
+            android:textSize="40sp" />
 
+    </LinearLayout>
+    <TextView
+        android:layout_below="@id/linearLayout1"
+        android:id="@+id/videoPlayer"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/century_gothic_bold_italic"
+        android:paddingLeft="8dp"
+        android:text="Video Player for you"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
     <VideoView
         android:id="@+id/videoView"
+        android:layout_below="@id/videoPlayer"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:clickable="false"/>
+        android:layout_height="504dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:clickable="false" />
 
-    <HorizontalScrollView
-        android:id="@+id/horizontalScrollView"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_below="@id/videoView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scrollbarThumbHorizontal="@null">
+        android:orientation="vertical">
 
-        <LinearLayout
-            android:id="@+id/linearLayout"
-            android:layout_width="wrap_content"
+
+
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="20dp">
+            android:scrollbarThumbHorizontal="@null">
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
-                android:longClickable="true"
-                android:onClick="clickImageView"
-                app:srcCompat="@drawable/galaxy" />
-            <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
-                app:srcCompat="@drawable/moon"
-                android:longClickable="true"/>
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
-                app:srcCompat="@drawable/clouds"
-                android:longClickable="true"/>
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
-                app:srcCompat="@drawable/caterpillar"
-                android:longClickable="true"/>
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
-                app:srcCompat="@drawable/sunrise"
-                android:longClickable="true"/>
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
-                app:srcCompat="@drawable/waves"
-                android:longClickable="true"/>
-        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp">
 
-    </HorizontalScrollView>
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:longClickable="true"
+                    android:onClick="clickImageView"
+                    app:srcCompat="@drawable/galaxy" />
 
-</LinearLayout>
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:longClickable="true"
+                    app:srcCompat="@drawable/moon" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:longClickable="true"
+                    app:srcCompat="@drawable/clouds" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:longClickable="true"
+                    app:srcCompat="@drawable/caterpillar" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:longClickable="true"
+                    app:srcCompat="@drawable/sunrise" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:longClickable="true"
+                    app:srcCompat="@drawable/waves" />
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <font
+        android:fontWeight="400"
+        android:font="@font/courier" />
+    <font
+    android:fontWeight="400"
+    android:font="@font/courier_text2" />
+
+    <font
+        android:fontWeight="400"
+        android:font="@font/courier_text" />
+
+    <font
+        android:fontWeight="400"
+        android:font="@font/century_gothic_bold_italic" />
+
+</font-family>
